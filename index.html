@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Vansh - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="name">Rahul Vansh</h1>
+            <div class="contact-bar">
+                <a href="mailto:rahul.nlp.ninja@gmail.com" class="contact-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                    <span>rahul.nlp.ninja@gmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/your-profile" target="_blank" class="contact-link" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://instagram.com/your-profile" target="_blank" class="contact-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Tab Navigation -->
+        <nav class="tab-navigation">
+            <button class="tab-button active" data-tab="blogs">
+                <i class="fas fa-blog"></i>
+                Blogs
+            </button>
+            <button class="tab-button" data-tab="projects">
+                <i class="fas fa-code"></i>
+                Projects
+            </button>
+            <button class="tab-button" data-tab="research">
+                <i class="fas fa-flask"></i>
+                Research
+            </button>
+        </nav>
+
+        <!-- Content Sections -->
+        <main class="content">
+            <!-- Blogs Tab -->
+            <section id="blogs" class="tab-content active">
+                <h2 class="section-title">Blogs</h2>
+                <div class="category">
+                    <h3 class="category-title">Boosting Algorithms</h3>
+                    <div class="items-grid">
+                        <div class="item-card">
+                            <h4 class="item-title">
+                                <a href="https://www.projectpro.io/article/adaboost-algorithm/972" target="_blank" class="item-link">
+                                    Quick revision of adaboost
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </h4>
+                            <p class="item-description">Knew the concept, want to recall? check this out</p>
+                        </div>
+                        <div class="item-card">
+                            <h4 class="item-title">
+                                <a href="https://www.project.com/article/adaboost-algorithm/972" target="_blank" class="item-link">
+                                    Deep dive into xgboost
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </h4>
+                            <p class="item-description">Get quick deeper insights</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Tab -->
+            <section id="projects" class="tab-content">
+                <h2 class="section-title">Projects</h2>
+                <div class="empty-state">
+                    <i class="fas fa-folder-open"></i>
+                    <p>Projects coming soon...</p>
+                    <p class="empty-hint">Add your projects in the same format as blogs</p>
+                </div>
+                <!-- Example structure for future projects:
+                <div class="category">
+                    <h3 class="category-title">Category Name</h3>
+                    <div class="items-grid">
+                        <div class="item-card">
+                            <h4 class="item-title">
+                                <a href="#" target="_blank" class="item-link">
+                                    Project Title
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </h4>
+                            <p class="item-description">Project description goes here</p>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </section>
+
+            <!-- Research Tab -->
+            <section id="research" class="tab-content">
+                <h2 class="section-title">Research</h2>
+                <div class="empty-state">
+                    <i class="fas fa-microscope"></i>
+                    <p>Research papers coming soon...</p>
+                    <p class="empty-hint">Add your research in the same format as blogs</p>
+                </div>
+                <!-- Example structure for future research:
+                <div class="category">
+                    <h3 class="category-title">Category Name</h3>
+                    <div class="items-grid">
+                        <div class="item-card">
+                            <h4 class="item-title">
+                                <a href="#" target="_blank" class="item-link">
+                                    Research Title
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </h4>
+                            <p class="item-description">Research description goes here</p>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Rahul Vansh. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
