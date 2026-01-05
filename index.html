@@ -12,43 +12,40 @@
         <!-- Header Section -->
         <header class="header">
             <h1 class="name">Rahul Vansh</h1>
+            <p class="subtitle">Research Engineer @Gen(Norton) | EMNLP | M.Tech ML @DA-IICT</p>
             <div class="contact-bar">
-                <a href="mailto:rahul.nlp.ninja@gmail.com" class="contact-link" title="Email">
-                    <i class="fas fa-envelope"></i>
-                    <span>rahul.nlp.ninja@gmail.com</span>
-                </a>
                 <a href="https://linkedin.com/in/your-profile" target="_blank" class="contact-link" title="LinkedIn">
                     <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
                 </a>
                 <a href="https://instagram.com/your-profile" target="_blank" class="contact-link" title="Instagram">
                     <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
+                </a>
+                <a href="mailto:rahul.nlp.ninja@gmail.com" class="contact-link" title="Email">
+                    <i class="fas fa-envelope"></i>
                 </a>
             </div>
+            
+            <!-- Tab Navigation -->
+            <nav class="tab-navigation">
+                <button class="tab-button active" data-tab="blogs">
+                    <i class="fas fa-blog"></i>
+                    Blogs
+                </button>
+                <button class="tab-button" data-tab="projects">
+                    <i class="fas fa-code"></i>
+                    Projects
+                </button>
+                <button class="tab-button" data-tab="research">
+                    <i class="fas fa-flask"></i>
+                    Research
+                </button>
+            </nav>
         </header>
-
-        <!-- Tab Navigation -->
-        <nav class="tab-navigation">
-            <button class="tab-button active" data-tab="blogs">
-                <i class="fas fa-blog"></i>
-                Blogs
-            </button>
-            <button class="tab-button" data-tab="projects">
-                <i class="fas fa-code"></i>
-                Projects
-            </button>
-            <button class="tab-button" data-tab="research">
-                <i class="fas fa-flask"></i>
-                Research
-            </button>
-        </nav>
 
         <!-- Content Sections -->
         <main class="content">
             <!-- Blogs Tab -->
             <section id="blogs" class="tab-content active">
-                <h2 class="section-title">Blogs</h2>
                 <div class="category">
                     <h3 class="category-title">Boosting Algorithms</h3>
                     <div class="items-grid">
@@ -76,54 +73,39 @@
 
             <!-- Projects Tab -->
             <section id="projects" class="tab-content">
-                <h2 class="section-title">Projects</h2>
-                <div class="empty-state">
-                    <i class="fas fa-folder-open"></i>
-                    <p>Projects coming soon...</p>
-                    <p class="empty-hint">Add your projects in the same format as blogs</p>
-                </div>
-                <!-- Example structure for future projects:
                 <div class="category">
-                    <h3 class="category-title">Category Name</h3>
+                    <h3 class="category-title">Machine Learning</h3>
                     <div class="items-grid">
                         <div class="item-card">
                             <h4 class="item-title">
-                                <a href="#" target="_blank" class="item-link">
-                                    Project Title
+                                <a href="https://github.com/rahulvansh66/share_market_direction_prediction/tree/master" target="_blank" class="item-link">
+                                    Share market direction prediction
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </h4>
-                            <p class="item-description">Project description goes here</p>
+                            <p class="item-description">Prediction of direction of close price movement using information from news articles along with price features like NIFTY 50</p>
                         </div>
                     </div>
                 </div>
-                -->
             </section>
 
             <!-- Research Tab -->
             <section id="research" class="tab-content">
-                <h2 class="section-title">Research</h2>
-                <div class="empty-state">
-                    <i class="fas fa-microscope"></i>
-                    <p>Research papers coming soon...</p>
-                    <p class="empty-hint">Add your research in the same format as blogs</p>
-                </div>
-                <!-- Example structure for future research:
                 <div class="category">
-                    <h3 class="category-title">Category Name</h3>
+                    <h3 class="category-title">Natural Language Processing</h3>
                     <div class="items-grid">
                         <div class="item-card">
                             <h4 class="item-title">
-                                <a href="#" target="_blank" class="item-link">
-                                    Research Title
+                                <a href="https://aclanthology.org/2023.findings-emnlp.169/" target="_blank" class="item-link">
+                                    Accuracy is not enough: Evaluating Personalization in Summarizers
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </h4>
-                            <p class="item-description">Research description goes here</p>
+                            <p class="item-description"><strong>ACL : EMNLP '23</strong><br>
+                            Authors: Rahul Vansh, Darsh Rank, Sourish Dasgupta, Tanmoy Chakraborty</p>
                         </div>
                     </div>
                 </div>
-                -->
             </section>
         </main>
 
