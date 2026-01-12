@@ -299,6 +299,118 @@ body {
     line-height: 1.5;
 }
 
+/* ===== Blog Index Structure ===== */
+.blog-index {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.index-topic {
+    background: var(--bg-card);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    margin-bottom: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.topic-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--accent-primary);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.topic-title i {
+    font-size: 1.5rem;
+}
+
+.index-subtopic {
+    margin-bottom: var(--spacing-lg);
+    padding-left: var(--spacing-md);
+    border-left: 3px solid var(--border-color);
+    transition: border-color var(--transition-normal);
+}
+
+.index-subtopic:hover {
+    border-left-color: var(--accent-secondary);
+}
+
+.index-subtopic:last-child {
+    margin-bottom: 0;
+}
+
+.subtopic-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--accent-secondary);
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.subtopic-title i {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.blog-links {
+    list-style: none;
+    padding-left: var(--spacing-lg);
+}
+
+.blog-item {
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+}
+
+.blog-item:last-child {
+    margin-bottom: 0;
+}
+
+.blog-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-normal);
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.blog-link:hover {
+    color: var(--accent-primary);
+    background: var(--bg-card-hover);
+    border-color: var(--accent-primary);
+    padding-left: calc(var(--spacing-sm) + 0.5rem);
+}
+
+.blog-link i.fa-file-alt {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.blog-link .external-icon {
+    font-size: 0.75rem;
+    margin-left: auto;
+    opacity: 0.5;
+    transition: opacity var(--transition-fast);
+}
+
+.blog-link:hover .external-icon {
+    opacity: 1;
+}
+
 /* ===== Research Section Specific Styles ===== */
 #research .items-grid {
     grid-template-columns: 1fr;
@@ -406,6 +518,27 @@ body {
     .category-title {
         font-size: 1.2rem;
     }
+    
+    /* Blog Index Responsive */
+    .index-topic {
+        padding: var(--spacing-md);
+    }
+    
+    .topic-title {
+        font-size: 1.4rem;
+    }
+    
+    .subtopic-title {
+        font-size: 1.1rem;
+    }
+    
+    .index-subtopic {
+        padding-left: var(--spacing-sm);
+    }
+    
+    .blog-links {
+        padding-left: var(--spacing-md);
+    }
 }
 
 @media (max-width: 480px) {
@@ -439,6 +572,25 @@ body {
     
     .contact-link i {
         font-size: 0.85rem;
+    }
+    
+    /* Blog Index Mobile */
+    .index-topic {
+        padding: var(--spacing-sm);
+    }
+    
+    .topic-title {
+        font-size: 1.2rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .subtopic-title {
+        font-size: 1rem;
+    }
+    
+    .blog-link {
+        font-size: 0.9rem;
     }
 }
 
