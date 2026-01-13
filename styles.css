@@ -109,20 +109,19 @@ body {
 .subtitle {
     font-size: 0.85rem;
     color: var(--text-muted);
-    margin: 0.35rem 0 var(--spacing-sm) 0;
+    margin: 0.35rem 0 0.5rem 0;
     font-weight: 400;
     letter-spacing: 0.01em;
     text-align: center;
 }
 
 .contact-bar {
-    position: absolute;
-    top: var(--spacing-sm);
-    right: var(--spacing-md);
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: var(--spacing-xs);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: var(--spacing-sm);
 }
 
 .contact-link {
@@ -131,8 +130,8 @@ body {
     justify-content: center;
     color: var(--text-muted);
     text-decoration: none;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
     transition: all var(--transition-normal);
     background: transparent;
@@ -147,7 +146,7 @@ body {
 }
 
 .contact-link i {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .contact-link span {
@@ -486,16 +485,16 @@ body {
     }
     
     .contact-bar {
-        gap: var(--spacing-xs);
+        gap: 0.4rem;
     }
     
     .contact-link {
-        width: 1.75rem;
-        height: 1.75rem;
+        width: 1.4rem;
+        height: 1.4rem;
     }
     
     .contact-link i {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
     }
     
     .tab-navigation {
@@ -565,13 +564,17 @@ body {
         font-size: 0.7rem;
     }
     
+    .contact-bar {
+        gap: 0.4rem;
+    }
+    
     .contact-link {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1.3rem;
+        height: 1.3rem;
     }
     
     .contact-link i {
-        font-size: 0.85rem;
+        font-size: 0.7rem;
     }
     
     /* Blog Index Mobile */
