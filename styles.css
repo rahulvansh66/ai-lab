@@ -468,7 +468,7 @@ body {
 }
 
 .footer-contact-bar {
-    padding-top: var(--spacing-md);
+    padding-top: var(--spacing-xs);
 }
 
 /* ===== Responsive Design ===== */
