@@ -467,6 +467,10 @@ body {
     margin-top: auto;
 }
 
+.footer-contact-bar {
+    padding-top: var(--spacing-md);
+}
+
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
     .profile-image {
